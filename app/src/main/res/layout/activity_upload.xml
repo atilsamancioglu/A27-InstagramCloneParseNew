@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/upload_activity_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="42dp"
+        android:onClick="chooseImage"
+        app:layout_constraintBottom_toTopOf="@+id/upload_activity_comment_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectpicture" />
+
+    <EditText
+        android:id="@+id/upload_activity_comment_text"
+        android:layout_width="304dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:hint="comment "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/upload_activity_upload_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_activity_imageview" />
+
+    <Button
+        android:id="@+id/upload_activity_upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="upload"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_activity_comment_text" />
+</android.support.constraint.ConstraintLayout>
